@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Latest compiled JavaScript -->
+    <scrip src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js">
+        </script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/assets/css/home.css">
+</head>
+<script src="/assets/js/node.js"></script>
+
+<body>
+    <!--Header-->
+    <header style="z-index: 99;">
+        <div w3-include-html="/header-footer/header.html"></div>
+    </header>
+    <!--End Header-->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/assets/img/DELUXE ROOM1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/img/EXECUTIVE ROOM.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/assets/img/JUNIOR SUITE ROOM1.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--thẻ <select> vs <option> : tao danh sách-->
+
+    <form action="home.html">
+        <div class="row">
+            <div class="col-md-2 block-left">
+                <div class="booking-form-title text-white"><a href="">Đặt bây giờ</a></div>
+                <div class="text-light text-white">
+                    Đảm bảo giá tốt nhât
+                </div>
+            </div>
+            <div class="col-md-2 mg mt-3">
+                <div class="awe-calendar-wrapper">
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="button">
+                                <i class="fa fa-calendar"></i>
+                            </button>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Ngày đến">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 mg mt-3">
+                <div class="awe-calendar-wrapper">
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button class="btn btn-secondary" type="button">
+                                <i class="fa fa-calendar"></i>
+                            </button>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Ngày đi">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 mg3 mt-3">
+                <div class="awe-calendar-wrapper">
+                    <select class="form-control" id="duatre" name="duatre" style="height:40px;">
+                        <option value="">Đứa trẻ</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-2 mg3 mt-3">
+                <div class="awe-calendar-wrapper">
+                    <select class="form-control" id="nguoilon" name="ngươilon" style="height:40px;">
+                        <option value="">Người lớn</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+            </div>
+            <div class="avalability-column col-md-2">
+                <button class="submit-seach">
+                    <span class="big-txt">Tìm</span>
+                </button>
+            </div>
+        </div>
+    </form>
+    <div class="container_gioithieu">
+        <div class="gioithieu">
+            <h1>Giới thiệu</h1>
+            <div class="row">
+                <div class="col-md -6 mt-3">
+                    <p style="text-align: justify;"><strong>Khách sạn</strong> là thành viên tiếp theo của hệ thống
+                        khách sạn Reyna, được quản lý bởi tập đoàn 22 Land. <br>
+                        Khách sạn tọa lạc tại vị trí 34 Phố Miếu Đầm, phường Mễ Trì, Nam Từ Liêm, Hà Nội - Nơi trung
+                        tâm hành chính quan trọng của quốc gia. Tiếp giáp với nhiều vị trí quan trọng: cách sân bay Nội
+                        Bài 25km, cách Trung tâm hội nghị quốc gia 3 phút đi bộ, gần sân vận động Quốc gia Mỹ Đình chỉ
+                        vài phút lái xe, đối diện với khách sạn JW Marriott, quý khách có thể dễ dàng di chuyển đến các
+                        tòa nhà văn phòng cũng như các khu công nghiệp lớn ở Hà Nội. Với vị trí thuận tiện di chuyển
+                        đến các Khu công nghiệp lân cận, gần các tòa nhà văn phòng và trung tâm thương mại,
+                        khách sạn Reyna Luxury hứa hẹn sẽ trở thành điểm dừng chân, nghỉ ngơi lý tưởng cho những chuyến
+                        đi công tác hay du lịch của khách hàng trong nước và quốc tế.</p>
+                    <div>
+                        <button class="submit-xemthem">
+                            <span class="big-txt">Xem thêm</span>
+                        </button>
+                    </div>
+                </div>
+                <img style="height: auto;vertical-align: middle;" class="col-md-6 mt-3 " src="/assets/img/hotel.jpg"
+                    alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <!--một số loại phòng-->
+
+    <div class="container-room">
+
+        <div class="col-md-12 owl-carousel owl-theme">
+            <div class="loaiphong">
+                <h3 style="text-align: center;color: #fff;margin-top: 20px;">MỘT SỐ LOẠI PHÒNG</h3>
+                <div class="row">
+                    <div class="col-md-3 mt-3 col-6">
+                        <div class="card">
+                            <img src="/assets/img/del.jpg" alt="Phòng Deluxe">
+                            <a href="/assets/actions/deluxeroom.html">PHÒNG DELUXE</a>
+                            <p>Phòng Deluxe với thiết kế hài hoà, nội thất sang trọng với đầy đủ tiện nghi</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-3 col-6">
+                        <div class="card">
+                            <img src="/assets/img/exe.jpg" alt="">
+                            <a href="/assets/actions/executive.html">PHÒNG EXECUTIVE</a>
+                            <p>Phòng Executive có tầm nhìn bao quát, có diệc tích khoáng 32m2 được trnag bị giường ngủ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-3 col-6">
+                        <div class="card">
+                            <img src="/assets/img/jun.jpg" alt="">
+                            <a href="/assets/actions/junior.html">PHÒNG JUNIOR SUITE</a>
+                            <p>Phòng Junior suite có tầm nhìn bao quát, có diện tích khoáng 40m2 được trang bị </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-3 col-6">
+                        <div class="card">
+                            <img src="/assets/img/super.jpg" alt="">
+                            <a href="/assets/actions/superior.html">PHÒNG SUPERIOR</a>
+                            <p>Phòng Junior suite có tầm nhìn bao quát, có diện tích khoáng 40m2 được trang bị </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container dichvu">
+        <div style="background-color: #fff;" class="dichvu">
+            <h3 style="text-align: center;">DỊCH VỤ</h3>
+            <p style="text-align: center;">Hãy đến với chúng tôi bạn sẽ nhận được những dịch vụ và ưu đãi tốt nhất</p>
+            <div class="row">
+                <div class="col-md-4 mt-3">
+                    <div style="border: 0;" class="card">
+                        <img src="/assets/img/nhahang.jpg" alt="">
+                        <h3>NHÀ HÀNG REYNA</h3>
+                        <p>Nhà hàng Reyna Hà Nội phục vụ tiệc buffet quốc tế vào buổi sáng và A la carte suốt cả ngày.
+                            Nhà hàng của chúng tôi mang đến những trải nghiệm ẩm thực đáng nhớ thông qua các hương vị
+                            mang bản sắc quốc tế và địa phương </p>
+                        <div>
+                            <button class="chitiet">
+                                <a href="/assets/actions/phan3_service_reyna.html">Chi tiết</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <div style="border: 0;" class="card">
+                        <img src="/assets/img/matxa.jpg" alt="">
+                        <h3>DỊCH VỤ MÁT XA</h3>
+                        <p>Chúng tôi cung cấp dịch vụ mát-xa chất lượng cao, đặt lịch linh hoạt và cam kết cung cấp dịch
+                            vụ chăm sóc chất lượng. Cho dù bạn đang muốn tìm cảm giác cân bằng và yên bình hay giảm đau,
+                            chúng tôi đều có thể đáp ứng nhu cầu trị liệu xoa bóp của bạn. </p>
+                        <div>
+                            <button class="chitiet">
+                                <a href="/assets/actions/phan3_service_massa.html">Chi tiết</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <div style="border: 0;" class="card">
+                        <img src="/assets/img/phong gym.jpg" alt="">
+                        <h3>PHÒNG GYM</h3>
+                        <p>Đang tiến triển</p>
+                        <div>
+                            <button class="chitiet">
+                                <a href="/assets/actions/phan3_service_gym.html">Chi tiết</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="wapper khachhang">
+        <div class="row">
+            <div class="col">
+                <div style="background-color: black;color: aliceblue;height: 200px;width: 100%;" class="ph">
+                    <h4>PHẢN HỒI CỦA KHÁCH HÀNG</h4>
+                    <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum has
+                        been the great font.</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div style="background-color: darkgoldenrod;color: aliceblue; height: 200px;width: 100%;" class="mq">
+                    <h4 style="text-align: center;">Mạnh Cường</h4>
+                    <p style="text-align: center;">Rất ấn tượng với dịch vụ và nhân viên phục vụ ở đây, sẽ ghé thăm các
+                        bạn vào lần sau</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wapper">
+        <h4 style="text-align: center;margin-top: 20px;">HÌNH ẢNH</h4>
+        <div class="wapper-img">
+            <div class="container-img">
+                <img src="/assets/img/hinh_1.jpg" alt="" class="image-box">
+                <div class="overlay">
+                    <div class="icon">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <h4>1</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container-img">
+                <img src="/assets/img/hinh_2.jpg" alt="" class="image-box">
+                <div class="overlay">
+                    <div class="icon">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <h4>2</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container-img">
+                <img src="/assets/img/hinh_3.jpg" alt="" class="image-box">
+                <div class="overlay">
+                    <div class="icon">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <h4>3</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container-img">
+                <img src="/assets/img/hinh_4.jpg" alt="" class="image-box">
+                <div class="overlay">
+                    <div class="icon">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <h4>4</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container-img">
+                <img src="/assets/img/hinh_5.jpg" alt="" class="image-box">
+                <div class="overlay">
+                    <div class="icon">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <h4>5</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <i class="fa fa-times close" aria-hidden="true"></i>
+        <div class="gallery_inner">
+            <img src="/assets/img/hinh_1.jpg" alt="hinh 1">
+        </div>
+        <div class="control prev">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </div>
+        <div class="control next">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer style="bottom: 0;">
+        <div w3-include-footer="/header-footer/footer.html"></div>
+    </footer>
+    <!--End Footer-->
+</body>
+
+<script src="/assets/js/home.js"></script>
+<script>
+    includeHeader()
+    includeFooter()
+</script>
+
+</html>

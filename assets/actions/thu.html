@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery{
+            width: 900px;
+            display: flex;
+            overflow-x: scroll;
+
+        }
+        .gallery div{
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 20px;
+            padding: 10px;
+            float: none;
+
+        }
+        .gallery div img{
+           width:100% ; 
+         
+        }
+        .gallery::-webkit-scrollbar{
+           display: none; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gallery">
+        <div>
+            <span><img src="/image/hinh_1.jpg" alt=""></span>
+            <span><img src="/image/hinh_2.jpg" alt=""></span>
+            <span><img src="/image/hinh_3.jpg" alt=""></span>
+        </div>
+        <div>
+            <span><img src="/image/hinh_1.jpg" alt=""></span>
+            <span><img src="/image/hinh_2.jpg" alt=""></span>
+            <span><img src="/image/hinh_3.jpg" alt=""></span>
+        </div>
+    </div>
+</body>
+</html>

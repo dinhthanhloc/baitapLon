@@ -1,0 +1,255 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+form{
+    background-color: goldenrod;
+
+}
+.text-white a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.text-white a:hover{
+    color: rgb(185, 220, 250);
+}
+.carousel-item img{
+    height: 550px;
+}
+div form{
+    display: inline-block;
+    
+}
+.block-left{
+    text-align: center;
+    height:80px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.fa{
+    display: inline-block;
+    text-rendering: auto;
+
+}
+
+.booking-form-title{
+    font-size: 20px;
+}
+
+.submit-seach{
+   
+    background-color:rgb(161, 137, 16);
+    height: 80px;
+    width: 100%;
+    border: 0;
+}
+
+.gioithieu{
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.submit-xemthem{
+    background-color:darkgoldenrod;
+    height: 50px;
+    width: 200px;
+    border: 0;
+    color: aliceblue;
+
+}
+.submit-xemthem:hover{
+    background-color: aliceblue;
+    color: darkgoldenrod;
+    border: 1px solid darkgoldenrod;
+}
+.container-room{
+    background-image: url(/assets/img/nen.webp);
+    margin-top: 60px;
+    padding-bottom: 40px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.loaiphong{
+    margin-top: 20px;
+}
+
+.loaiphong img{
+    height: 200px;
+}
+.loaiphong a{
+    text-decoration: none;
+    text-align: center;
+    color:darkgoldenrod;
+    font-weight: 600;
+    
+}
+
+.dichvu{
+    margin-top: 20px;
+}
+.dichvu h3{
+    text-align: center;
+}
+.dichvu p{
+    text-align: justify;
+}
+.dichvu img{
+    height: 300px;
+}
+.card{
+    text-align: center;
+}
+.chitiet{
+    background-color: darkgoldenrod;
+    color: aliceblue;
+    border: 0;
+    height: 40px;
+    width: 100px;
+}
+.chitiet a{
+    color: aliceblue;
+    padding: 20px;
+    text-decoration: none;
+}
+.chitiet:hover{
+    background-color: aliceblue;
+    color: darkgoldenrod;
+    border: 1px solid darkgoldenrod;
+    transition: 1s;
+}
+.chitiet:hover a{
+    color: darkgoldenrod;
+}
+.khachhang{
+    margin-top: 20px;
+    
+    
+}
+.wapper-img{
+    display: flex;
+}
+.container-img{
+    position: relative;
+    width: 20%;
+    height: 200px;
+    
+}
+.image-box{
+    width: 100%;
+    height: 100%
+}
+.overlay{
+    position: absolute;
+    background-color: rgb(0,0,0,0.8);
+    text-align: center;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+.overlay:hover{
+    opacity: 1;
+}
+.icon{
+    color:#fff;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.fa-plus:hover{
+    color: #eee;
+}
+
+.gallery{
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: rgb(0,0,0,0.8);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: 0.5s;
+
+}
+.close{
+    position: fixed;
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
+}
+/* .gallery_inner{
+    height: 70%;
+    width: 70%;
+    margin: 0 auto;
+} */
+ .gallery_inner {
+    position: absolute;
+    display: flex;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid #fff;
+    width: 700px;
+    text-align: center;
+    transition: color white 1s;
+    
+} 
+.gallery_inner img{
+    height: 100%;
+    width: 100%;
+}
+.control{
+    font-size: 50px;
+    color:rgb(255,255,255,0.8);
+    position: absolute;
+    
+}
+.control.prev{
+    cursor: pointer;
+    top: 350px;
+    left: 15px;
+    
+}
+.control.next{
+    cursor: pointer;
+    top: 350px;
+    right: 15px;
+}
+.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+.hide{
+    display: none;
+}
+

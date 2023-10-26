@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="/assets/css/gallery.css">
+    <script src="https://kit.fontawesome.com/a610a0c4b9.js" crossorigin="anonymous"></script>
+</head>
+<script src="/assets/js/node.js"></script>
+
+<body>
+    <!--Header-->
+    <header style="z-index: 99;">
+        <div w3-include-html="/header-footer/header.html"></div>
+    </header>
+    <!--End Header-->
+    <!-- Content -->
+    <div class="container">
+        <div class="main">
+            <img src="/assets/img/hinh_1.jpg" alt="" class="img-feature">
+            <div class="control prev"><i class="fa-solid fa-angle-left"></i></div>
+            <div class="control next"><i class="fa-solid fa-angle-right"></i></div>
+        </div>
+        <div class="list-image">
+            <div><img src="/assets/img/hinh_1.jpg" alt=""></div>
+            <div><img src="/assets/img/hinh_2.jpg" alt=""></div>
+            <div><img src="/assets/img/hinh_3.jpg" alt=""></div>
+            <div><img src="/assets/img/hinh_4.jpg" alt=""></div>
+            <div><img src="/assets/img/anh_nen.jpg" alt=""></div>
+            <div><img src="/assets/img/hinh_6.jpg" alt=""></div>
+            <div><img src="/assets/img/nhahang.jpg" alt=""></div>
+            <div><img src="/assets/img/DELUXE ROOM6.jpg" alt=""></div>
+
+        </div>
+    </div>
+    <!--Footer-->
+<footer>
+    <div w3-include-footer="/header-footer/footer.html"></div>
+</footer>
+<!--End Footer-->
+
+</body>
+<script src="/assets/js/gallery.js"></script>
+<script>
+    includeHeader()
+    includeFooter()
+</script>
+
+</html>

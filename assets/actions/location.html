@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a610a0c4b9.js" crossorigin="anonymous"></script>
+    <title>Location</title>
+    <link rel="stylesheet" href="/assets/css/location.css">
+</head>
+<script src="/assets/js/node.js"></script>
+
+<body>
+    <!--Header-->
+    <header style="z-index: 99;">
+        <div w3-include-html="/header-footer/header.html"></div>
+    </header>
+    <!--End Header-->
+
+    <!--Slider-->
+    <section class="breadcrumb-area overlay-dark-2 bg-3 ROOM">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-text text-center room">
+                        <h4 style="color: #fff;">CONTACT</h4>
+                        <ul class="room1">
+                            <li><a ref="nofollow" href="/">HOME</a></li>
+                            <li>/CONTACT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="main">
+            <form action="#">
+                <div class="prefix">
+                    <input type="radio" name="prefix-name">Mr
+                    <input type="radio" name="prefix-name">Ms
+                </div>
+                <div class="name-email">
+                    <input type="text" class="name" id="name" name="name" placeholder="Name">
+                    <input type="text" class="email" id="email" name="email" placeholder="Email">
+                </div>
+                <div class="phone-address">
+                    <input type="text" class="phone" name="phone" id="phone" placeholder="Phone">
+                    <input type="text" class="address" name="address" id="address" placeholder="Address">
+                </div>
+
+                <div class="messenger">
+                    <textarea id="Request" cols="30" rows="6" name="Request" placeholder="Messeger"></textarea>
+                </div>
+
+                <div class="submit-button">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="location">
+            <div class="header-text">
+                <h1>REYNA LUXURY HOTEL</h1>
+            </div>
+            <div class="address-hotel">
+                <p><i class="fa-solid fa-location-dot"></i> Address:
+                    <strong>No. 34 Mieu Dam, Me Tri Ward, Nam Tu Liem District, Hanoi</strong>
+                </p>
+
+                <p><i class="fa-solid fa-phone"></i> Tel:
+                    <strong>024 3359 3555</strong>
+                </p>
+
+                <p><i class="fa-regular fa-envelope"></i> Email:
+                    <strong>info@reynaluxuryhotel.com</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer>
+        <div w3-include-footer="/header-footer/footer.html"></div>
+    </footer>
+    <!--End Footer-->
+
+</body>
+<script>
+    includeHeader()
+    includeFooter()
+</script>
+
+</html>

@@ -1,0 +1,102 @@
+body{
+    position: relative;
+}
+
+.ROOM{
+    min-height: 500px;
+    position: relative;
+    background: url(/assets/img/anh_nen.jpg) no-repeat center/cover;
+    margin-bottom: 50px;
+}
+
+.room{
+    padding: 15px 45px 10px 40px;
+    border: 2px solid #fff;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    top: 50%;
+}
+.room h2{
+    text-align: center;
+    margin-top: 5px;
+
+}
+.junior-suite-room{
+    margin-bottom: 300px;
+}
+.room ul li {
+    display: inline-block;
+    margin: 3px;
+    text-decoration: none;
+}
+.room ul>li,h4{
+    text-align: center;
+    color: #fff;
+}
+.room li>a{
+    color: #fff;
+    text-decoration: none;
+}
+.room li>a:hover{
+    color: #f55d5d;
+}   
+.content-room{
+    border: 1px solid #f1ebeb;
+    padding:5px 5px 5px 5px;
+}
+.content-room>a:hover{
+    color: #f55d5d;
+}
+.content-room>a{
+    font-size: 150%;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+#img-cut>img{
+    margin-top: 20px;
+    width: 100%;
+    
+}
+.content-room-img{
+    padding:5px 5px 5px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px  solid #f1ebeb;
+}
+.content-room-img>a{
+    color: #f55d5d;
+    font-size: 20px;
+}
+.content-room-order>span{
+    font-size: 200%;
+    font-weight: 700;
+}
+.flexslider>ul{
+    list-style: none;
+}
+.button{
+    color:burlywood;
+    display: table;
+    border: 2px solid burlywood;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.button:hover{
+    color: #fff;
+    background-color: burlywood;
+}
+#olw-detairoom{
+    display: flex;
+    flex-wrap: wrap;    
+}
+#item{
+    text-decoration: none;
+    color: burlywood;
+}
+a:hover{
+    color: rgb(22, 84, 150);
+}

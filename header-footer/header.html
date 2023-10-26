@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baitaplon</title>
+    <link rel="icon" href="/header-footer/img/logo-reyna.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/header-footer/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+    <div id="header">
+        <div class="header-img">
+            <img src="/header-footer/img/logo-reyna.png" alt="">
+        </div>
+        <div class="container-header-list">
+            <ul class="header-list">
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="/assets/actions/about.html">About</a></li>
+                <li><a href="/assets/actions/phan3_room.html">Rooms</a></li>
+                <li>
+                    <a href="#">
+                        Services
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="sub-list">
+                        <li><a href="/assets/actions/phan3_service_massa.html">Massage Services</a></li>
+                        <li><a href="/assets/actions/phan3_service_reyna.html">Reyna Luxury Restautant</a></li>
+                        <li><a href="/assets/actions/phan3_service_gym.html">Gym</a></li>
+                    </ul>
+                </li>
+                <li><a href="/assets/actions/gallery.html">Gallery</a>
+                </li>
+                <li><a href="/assets/actions/location.html">Contact</a></li>
+            </ul>
+        </div>
+        <div id="menu" class="mobile-menu">
+            <i class="fa fa-bars" style="color: #fff;"></i>
+        </div>
+        <div class="header-contact">
+            <!-- <i class="fa fa-phone contact" style="color: #fff;">+84 816 637 799/ +84 966 438 068 (call/zalo)</i> -->
+        </div>
+
+    </div>
+    <script>
+        var header = document.getElementById('header');
+        var mobile = document.getElementById('menu');
+        mobile.onclick = function () {
+            var isclose = header.clientHeight == 50;
+            if (isclose) {
+                header.style.height = 'auto';
+            }
+            else {
+                header.style.height = null;
+            }
+        }
+        var menuItems = document.querySelectorAll('header-list li  a[href*="#"]');
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            menuItem.onclick = function () {
+                header.style.height = null;
+            }
+
+        }
+    </script>
+</body>
+
+</html>

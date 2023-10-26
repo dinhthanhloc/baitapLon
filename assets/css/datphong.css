@@ -1,0 +1,119 @@
+body{
+    font-family: sans-serif;
+    font-size: 14px;
+}
+div{
+    display: block;
+}
+.anh{
+    background-image: url(https://reynaluxuryhotel.com/Content/Img/baner.jpg);
+    background-attachment: scroll;
+    background-clip: initial;
+    background-color: rgba(0, 0, 0, 0);
+    background-origin: initial;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    position: relative;
+    display: block; 
+    padding: 150px 0px;
+}
+.ten{
+    text-align: center;
+    position: relative;
+    display: table;
+    border: 1px solid #fff;
+    color: #fff;
+    margin: auto;
+    padding: 18px 60px;
+}
+.ten h4{
+    color: #fff;
+    font-size: 32px;
+    line-height: 26px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.container{
+    padding: 50px 0px;
+}
+.form{
+    margin-bottom: 15px;
+}
+.kieuchu{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    color: #0e385d;
+    font-size: 16px;
+    font-weight: 700;
+}
+.sao{
+    color: red;
+}
+.nhap{
+    background-color: rgb(255, 255, 255);
+    color: #0e385d;
+    height: 50px;
+    border-color: #0e385d;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+table, td, tr{
+    border: 1px solid #ddd;
+}
+table{
+    display: table;
+    text-indent: initial;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+td{
+    padding: 8px;
+}
+.loaiphong{
+    color: #0e385d;
+    font-weight: bold;
+}
+.btn{
+    border-radius: 10px;
+    color: #fff;
+    background: #ae8545;
+    border: 1px solid #ae8545;
+    padding: 15px 40px;
+    font-size: 17px;
+    text-align: center;
+}
+.backtop{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background: rgb(255, 210, 128);
+    color: rgb(139, 80, 3);
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+textarea{
+    background-color: rgb(255, 255, 255);
+    color: #0e385d;
+    border-color: #0e385d;
+    height: 250px;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
